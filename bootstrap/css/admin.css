@@ -1,0 +1,103 @@
+/* Custom styles for Admin Login */
+
+/* Background image */
+body {
+    background-image: url('../../assets/image/background2.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+/* Login card */
+.login-card {
+    margin-top: 100px;
+}
+
+/* Card custom */
+.card {
+    background: rgba(255, 255, 255, 0.97);
+    backdrop-filter: blur(8px);
+    border: none;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+}
+
+.card-header {
+    border-radius: 15px 15px 0 0 !important;
+    border: none;
+    background: linear-gradient(135deg, #198754 0%, #157347 100%);
+}
+
+/* Form controls */
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 0.6rem 1rem;
+    transition: all 0.2s;
+}
+
+.form-control:focus {
+    border-color: #198754;
+    box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.15);
+}
+
+.form-label {
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+/* Button */
+.btn {
+    border-radius: 8px;
+    padding: 0.6rem 1rem;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.btn-success {
+    background: linear-gradient(135deg, #198754 0%, #157347 100%);
+    border: none;
+}
+
+.btn-success:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(25, 135, 84, 0.3);
+}
+
+/* Alert */
+.alert {
+    border-radius: 8px;
+    border: none;
+}
+
+/* Link */
+.btn-link {
+    color: #198754;
+    text-decoration: none;
+}
+
+.btn-link:hover {
+    color: #157347;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .login-card {
+        margin-top: 50px;
+    }
+    
+    .card-body {
+        padding: 1.5rem;
+    }
+    
+    .form-control {
+        font-size: 0.9rem;
+    }
+    
+    .card-header h4 {
+        font-size: 1.1rem;
+    }
+}
